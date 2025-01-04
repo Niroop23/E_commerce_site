@@ -9,6 +9,6 @@ Currently, two official plugins are available:
 
 This is a pretty simple website (currently only has the front-end logic ).
 
-# What are the thingss incorporated into this site.
--On launching the website, you are welcomedd by a simple Home interface.
+# What are the things incorporated into this site:
+-On launching the website, you are welcomedd by a simple Home interface.:
   -dfndfn
