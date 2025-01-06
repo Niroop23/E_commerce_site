@@ -23,7 +23,6 @@ const Nav = () => {
   useEffect(() => {
     const storedCartItems = localStorage.getItem("cartItems");
     if (storedCartItems) {
-      // Parse the stored cart items and update Recoil state
       setCartItems(JSON.parse(storedCartItems));
     }
   }, [setCartItems]);
@@ -104,15 +103,13 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* <hr className="border-black border-[1.6px] w-full mb-3" /> */}
-      {/*background overlay*/}
       {overlay && (
         <div
           className="fixed top-0 right-0 bottom-0 left-0 bg-black bg-opacity-50 z-40"
           onClick={closeSideMenu}
         />
       )}
-      {/* side menu */}
+
       <div
         className={`absolute top-0 right-0 bottom-0 bg-white transition-all duration-300 ease-in-out overflow-hidden drop-shadow-lg rounded-md ${
           visible ? "w-3/4" : "w-0"

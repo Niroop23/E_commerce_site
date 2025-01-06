@@ -30,6 +30,3 @@ function App() {
 }
 
 export default App;
-
-//https://youtu.be/7E6um7NGmeE?feature=shared
-//https://youtu.be/yQimoqo0-7g?feature=shared

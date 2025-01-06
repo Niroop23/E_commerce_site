@@ -1,4 +1,3 @@
-//a seperate page that displays info about the selected product
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import apiDataAtom from "../recoil/apiDataAtom";
@@ -55,7 +54,7 @@ const Product_Details = () => {
 
   if (loading)
     return (
-      <div className="text-2xl text-center">
+      <div className="text-2xl text-center min-h-[60vh]">
         <p>Loading Product...</p>
       </div>
     );
@@ -65,7 +64,7 @@ const Product_Details = () => {
     <div>
       <div>
         {apiItems[cur_index] && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5 pb-[100px]">
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 mt-5 pb-[100px]">
             <div className="flex justify-center">
               <img
                 src={apiItems[cur_index].image}

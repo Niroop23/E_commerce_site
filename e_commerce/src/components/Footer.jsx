@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className=" flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14  text-sm pb-10    
+        className=" flex flex-col sm:grid gap-14 grid-cols-[3fr_1fr_1fr]   text-sm pb-10    
       bg-[#7e8d8d]
         text-black
         pt-[75px]
@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       <div>
         <hr />
-        <p className="py-5 text-center text-sm">
+        <p className="text-sm py-5 text-center ">
           Copyright &copy; 2024 NXT BUY. All Rights Reserved.
         </p>
       </div>

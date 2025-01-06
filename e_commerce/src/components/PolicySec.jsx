@@ -1,5 +1,5 @@
 import React from "react";
-import returnIcon from "/src/assets/return.svg"; // Importing the image
+import returnIcon from "/src/assets/return.svg";
 
 const PolicySec = () => {
   return (

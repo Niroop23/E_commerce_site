@@ -25,10 +25,10 @@ const Cart = () => {
   }, [cartItems]);
 
   console.log("CARTITEMS", cartItems);
-  // If the cart is empty
+
   if (cartItems.length === 0) {
     return (
-      <div className="h-[70vh]">
+      <div className="h-[60vh]">
         <h2 className="text-2xl font-semi-bold text-center">
           Your Cart is Empty
         </h2>
@@ -36,7 +36,6 @@ const Cart = () => {
     );
   }
 
-  // Calculate total price of all items in the cart
   const totalPrice = cartItems.reduce((total, item) => {
     if (item && item.price) {
       return total + item.price * item.quantity;
@@ -70,7 +69,7 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div className="h-[60vh]">
       <h2 className="text-2xl font-semibold text-center">
         Cart has {cartNum} items
       </h2>
@@ -82,11 +81,12 @@ const Cart = () => {
               <td className="p-2 border border-gray-300">Price</td>
               <td className="p-2 border border-gray-300">Quantity</td>
               <td className="p-2 border border-gray-300">Total</td>
-              <td className="p-2 border border-gray-300 "> </td>
+              <td className="p-2 border border-gray-300 opacity-0 sm:opacity-100 ">
+                {" "}
+              </td>
             </tr>
           </thead>
           <tbody>
-            {/* Dynamically generate rows for each item in the cart */}
             {cartItems.map((item, index) => (
               <tr key={index}>
                 <td className="p-5 border border-gray-300  ">

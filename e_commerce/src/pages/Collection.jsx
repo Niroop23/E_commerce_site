@@ -59,7 +59,6 @@ const Collection = () => {
   return (
     <div>
       <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t pb-5  bg-[#e3e6e6]">
-        {/*filters*/}
         <div className="min-w-60">
           <div>
             <div className="sm:hidden">
@@ -70,14 +69,13 @@ const Collection = () => {
                 Filters
                 <ArrowDropDownTwoToneIcon
                   fontSize="medium"
-                  className={` cursor-pointer sm:hidden ${
-                    filter ? "rotate-180" : ""
-                  }`}
+                  className="  cursor-pointer sm:hidden 
+                  "
                 />
               </p>
             </div>
           </div>
-          {/*category  wise */}
+
           <div
             className={`border border-gray-400 pl-5 py-4 mt-7 ${
               filter ? "" : "hidden"
@@ -153,7 +151,7 @@ const Collection = () => {
             </div>
           </div>
         </div>
-        {/*products*/}
+
         <div className="flex-1">
           <div className="flex justify-between sm:text-2xl mb-5">
             <section className="flex gap-2 items-center    ">
@@ -165,7 +163,7 @@ const Collection = () => {
               </h1>
               <hr className="border-gray-700 border-[1px] w-10 mt-2" />
             </section>
-            {/*product sorting */}
+
             <select
               className="border-2 border-gray-300 text-sm px-2 py-1 
             "
@@ -177,7 +175,7 @@ const Collection = () => {
               <option value="high-low">Sort by: High to Low</option>
             </select>
           </div>
-          {/* products from api call */}
+
           <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5  sm:max-w-[300px] md:max-w-[800px] lg:max-w-[1200px] mx-auto">
             {finalItems &&
               finalItems.map((item) => (
