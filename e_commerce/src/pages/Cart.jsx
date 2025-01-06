@@ -28,7 +28,7 @@ const Cart = () => {
   // If the cart is empty
   if (cartItems.length === 0) {
     return (
-      <div>
+      <div className="h-[70vh]">
         <h2 className="text-2xl font-semi-bold text-center">
           Your Cart is Empty
         </h2>
