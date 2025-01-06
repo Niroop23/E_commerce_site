@@ -191,7 +191,7 @@ const Collection = () => {
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="w-full md:max-w-[300px] h-60 object-scale-down"
+                        className="w-full md:max-w-[300px] h-60 object-scale-down p-[20px]"
                       />
                       <div className="opacity-0 hover:opacity-100 absolute top-0 left-0 bg-gray-600 text-white p-1 transition-all duration-300 ease-in-out delay-100 ">
                         {item.category}
