@@ -69,7 +69,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="h-[60vh]">
+    <div className=" ">
       <h2 className="text-2xl font-semibold text-center">
         Cart has {cartNum} items
       </h2>
