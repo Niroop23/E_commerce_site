@@ -5,7 +5,7 @@ import posterImage from "/src/assets/poster.svg";
 const Poster = () => {
   return (
     <section
-      className="flex flex-col item-center sm:flex-row border border-gray-400 bg-[#a6afb9] "
+      className="flex flex-col item-center  sm:flex-row border border-gray-400 bg-[#a6afb9] "
       aria-label="Product Poster"
     >
       <div className="w-full sm:w-1/2 flex flex-col items-center justify-center p-4 sm:p-8">
@@ -27,11 +27,11 @@ const Poster = () => {
           </div>
         </header>
       </div>
-      <div className="w-full sm:w-1/2 sm:max-w-md sm:max-h-[400px] flex items-center justify-center p-4 sm:p-8">
+      <div className="w-full    sm:w-1/2 sm:max-w-md sm:max-h-90 p-4 sm:p-8">
         <img
-          src="/assets/poster_rmx.svg"
+          src="/src/assets/poster_rmx.svg"
           alt="Product Image"
-          className="w-full h-auto max-w-full max-h-[350px] object-contain rounded-md"
+          className="w-full  object-cover rounded-md "
         />
       </div>
     </section>
