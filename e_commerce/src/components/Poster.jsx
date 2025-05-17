@@ -27,11 +27,11 @@ const Poster = () => {
           </div>
         </header>
       </div>
-      <div className="w-full    sm:w-1/2 sm:max-w-md sm:max-h-90 p-4 sm:p-8">
+      <div className="w-full sm:w-1/2 sm:max-w-md sm:max-h-[400px] flex items-center justify-center p-4 sm:p-8">
         <img
-          src="/src/assets/poster_rmx.svg"
+          src="/poster_rmx.svg"
           alt="Product Image"
-          className="w-full  object-cover rounded-md "
+          className="w-full h-auto max-w-full max-h-[350px] object-contain rounded-md"
         />
       </div>
     </section>
